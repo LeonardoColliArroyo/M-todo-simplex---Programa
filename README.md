@@ -94,9 +94,8 @@ No se requieren bibliotecas externas, ya que el proyecto utiliza solo HTML, CSS 
 
 #GRACIAS
 
-##Nombre de los integrantes de equipo:
-#####Christian Dominique Hernandez Pacheco
-#####Jennifer Mariana Alonzo Ake
+##Nombre de los integrantes de equipo: 
+#####Christian Dominique Hernandez Pacheco 
+#####Jennifer Mariana Alonzo Ake 
 #####Leonardo Angel de Jesus Colli Arroyo
-
 ### FIN
