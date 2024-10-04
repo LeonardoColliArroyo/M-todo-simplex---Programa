@@ -1,0 +1,348 @@
+body {
+    height: 100%; /* Ocupa toda la altura del viewport */
+    margin: 0;
+    padding: 0;
+    background-color: #aebfca;
+}
+
+.ventana{
+    width: 50%;
+    height: 85%;
+    border: none;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+    position: absolute; /* Posiciona respecto al body */
+    top: 50%; /* Mueve hacia abajo el 50% */
+    left: 50%; /* Mueve hacia la derecha el 50% */
+    transform: translate(-50%, -50%); /* Ajusta el contenedor para centrarlo */
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#Header{
+    width: 100%;
+    height: 5%;
+    background-color: #21242a;
+    border: none;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position:relative;
+  
+    
+}
+
+.MainWindow {
+    width: 100%;
+    height: 95%;
+    background-color: #F5F8FF;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative; /* Absoluto respecto a ventana */
+
+  
+}
+
+#Solver{
+width: 38%;
+height:58%;
+position: absolute;
+top: 33%; /* Mueve hacia abajo el 50% */
+left:70.5%; /* Mueve hacia la derecha el 50% */
+transform: translate(-50%, -50%);
+
+}
+
+#infografia{
+   position: absolute;
+   left:1.4%;
+   top: 1.5%;
+   display: block;
+
+}
+
+#uso{
+    position: absolute;
+    left:2%;
+    top: 1.5%;
+    display: none;
+ 
+ }
+ 
+
+
+#resultados {
+    width: 90%; /* Ancho del 90% del contenedor padre */
+    height: 23%; /* Alto del 25% del contenedor padre */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(156, 156, 156, 0.345);
+    position: absolute;
+    border-radius: 25px; /* Cambia el border-radius a un valor fijo */
+    background-color: rgb(255, 255, 255);
+    top: 85%; /* Mueve hacia abajo el 85% del contenedor padre */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.099);
+}
+    
+
+    .botonBorrarDatos {
+        position: absolute;
+        background-color: #c81818; /* Color de fondo */
+        border: none; /* Sin bordes */
+        color: white; /* Color del texto */
+        text-align: center; /* Alinear texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Comportamiento de bloque en línea */
+        cursor: pointer; /* Cambiar cursor a pointer */
+        border-radius: 50%; /* Hacer el botón redondo */
+        width: 2.5%; /* Ancho fijo */
+        height: 51%; /* Alto fijo */
+        top:0%;
+        left: 3%;
+    }
+    .botonBorrarDatos:hover {
+        background-color: #921313; /* Cambiar color en hover */
+    }
+
+    .botonInformativo {
+        position: absolute;
+        background-color: #ffb804; /* Color de fondo */
+        border: none; /* Sin bordes */
+        color: white; /* Color del texto */
+        text-align: center; /* Alinear texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Comportamiento de bloque en línea */
+        cursor: pointer; /* Cambiar cursor a pointer */
+        border-radius: 50%; /* Hacer el botón redondo */
+        width: 2.5%; /* Ancho fijo */
+        height: 51%; /* Alto fijo */
+        top:0%;
+        left:7%;
+    }
+    .botonInformativo:hover {
+        background-color: #b48204; /* Cambiar color en hover */
+    }
+
+    .botonBuscar {
+        position: absolute;
+        background-color: #5ada1b; /* Color de fondo */
+        border: none; /* Sin bordes */
+        color: white; /* Color del texto */
+        text-align: center; /* Alinear texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Comportamiento de bloque en línea */
+        cursor: pointer; /* Cambiar cursor a pointer */
+        border-radius: 50%; /* Hacer el botón redondo */
+        width: 2.5%; /* Ancho fijo */
+        height: 51%; /* Alto fijo */
+        top:0%;
+        left: 11%;
+    }
+    .botonBuscar:hover {
+        background-color: #3d8a16; /* Cambiar color en hover */
+    }
+    
+
+
+
+    .formulario {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Ajusta el ancho al 60% */
+        height:100%;
+    }
+
+    .AgregarDatos{
+        background-color:white;
+        width: 44.5%;
+        height: 65%;
+        position: absolute;
+        top: 36.5%; /* Mueve hacia abajo el 50% */
+        left: 73.5%; /* Mueve hacia la derecha el 50% */
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        display: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        
+        
+    }
+    
+    h2 {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 19px;
+        font-weight: 800;
+    }
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;        
+        font-weight: 450;
+    }
+    
+    input[type="text"] {
+        width: 70%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    .botones-opciones {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .opcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra la etiqueta y el botón en el eje horizontal */
+    }
+    
+    .boton-opcion {
+        width: 25px;
+        height:25px;
+        padding:10px;
+        border-radius: 50%;
+        border: none;
+        color: white;
+        background-color: #ccc;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+        margin-top: 5px; /* Espacio entre el botón y la etiqueta */
+    }
+    
+    .boton-opcion:hover {
+        background-color: #4CAF50;
+    }
+    
+    .boton-opcion.minimizacion:hover {
+        background-color: #F44336; /* Rojo en hover para minimización */
+    }
+    
+    .boton-opcion.maximizacion.activo {
+        background-color: #4CAF50;
+    }
+    
+    .boton-opcion.minimizacion.activo {
+        background-color: #F44336;
+    }
+    
+    input::placeholder {
+        font-size: 12px; /* Cambia a 18px o el tamaño que desees */
+        color: #aaa; /* Cambia el color si lo prefieres más claro */
+    }
+    
+    .restricciones {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en columna para que el input y el botón estén debajo de la etiqueta */
+        margin-bottom: 7px;
+    }
+    
+
+    .restriccionesAgregar {
+        display: flex;
+        align-items: center; /* Alinea verticalmente los elementos en el centro */
+        margin-bottom:5px;
+    }
+    
+    .restricciones input {
+        flex: 1; /* Permite que el input tome el espacio disponible */
+        margin-right: 10px; /* Añade un espacio entre el input y el botón */
+    }
+    
+
+    .boton-agregar-restriccion {
+        width: 8%;
+        height: 9.5%;
+        border-radius: 50%;
+        border: none;
+        background-color: #ccc;
+        cursor: pointer;
+        font-size: auto;
+        transition: background-color 0.3s;
+        margin-top: -12px; /* Reduce este valor si necesitas moverlo más hacia arriba */
+    }
+    
+    .boton-agregar-restriccion:hover {
+        background-color: #f6d209;
+    }
+    
+    .boton-resolver {
+        width: 100%;
+        padding: 10px;
+        background-color: #607D8B; /* Azul grisáceo */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        margin-top: -6px; /* Reduce este valor si necesitas moverlo más hacia arriba */
+    }
+    
+    .boton-resolver:hover {
+        background-color: #455A64; /* Azul grisáceo oscuro */
+    }
+
+
+
+
+    /* Estilo para las filas de los inputs */
+.restriccion-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Espacio entre filas */
+}
+
+/* Estilo para los inputs */
+input[type="number"] {
+    width: 30px; /* Ancho fijo */
+    margin: 0 5px; /* Margen lateral entre inputs */
+}
+
+/* Estilo para las etiquetas */
+label {
+    margin-right: 10px; /* Espacio entre etiqueta e input */
+}
+
+/* Estilo para el botón de regresar */
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #d2bd19; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+#resolverSimplex{
+
+    background-color: #3b8b3e;
+
+}
+
+#resolverSimplex:hover{
+    background-color: #34a638;
+}
+
+button:hover {
+    background-color: #ffdd01; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+
+
+

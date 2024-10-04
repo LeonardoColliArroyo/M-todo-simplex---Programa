@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Resources/Icon-removebg-preview.png">
+    <title>Simplex Method Solver</title>
+</head>
+
+<body>
+<section class="ventana">
+    <section id="Header">
+        <button class="botonBorrarDatos" title="Borrar Datos"></button>
+        <button class="botonInformativo" onclick="cambiarImagen()" title="Mostrar Información"></button>
+        <button class="botonBuscar" title="Buscar"></button>
+    </section>
+
+    <section class="MainWindow">
+        <img id="infografia" src="Resources/SimplexRecorte (1).png" style="width: 47%; height: auto;">
+        <img id="uso" src="Resources/uso (1).png" style="width: 47%; height: auto; display: none;"> <!-- Oculto inicialmente -->
+
+        <section id="Solver">
+            <div class="formulario">
+                <h2>Formulario de Optimización</h2>
+                
+                <label for="numero-variables">Número de variables de decisión:</label>
+                <input type="text" id="numero-variables" placeholder="# variables de decisión" oninput="actualizarNumeroVariables()">
+                
+                <div class="botones-opciones">
+                    <div class="opcion">
+                        <label for="maximizacion">Maximización:</label>
+                        <button class="boton-opcion maximizacion" id="maximizacion" onclick="seleccionarOpcion('maximizar')"></button>
+                    </div> 
+                
+                    <div class="opcion">
+                        <label for="minimizacion">Minimización:</label>
+                        <button class="boton-opcion minimizacion" id="minimizacion" onclick="seleccionarOpcion('minimizar')"></button>
+                    </div>
+                </div>
+        
+                <div class="restricciones">
+                    <label for="numero-restricciones">Número de restricciones:</label>
+                    <div class="restriccionesAgregar">
+                        <input type="text" id="numero-restricciones" placeholder="Agrega # de restricciones">
+                    </div>
+                
+                    <button class="boton-resolver" onclick="generarDatos()">Generar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="AgregarDatos" style="display: none;" id="AgregarDatos">
+            <!-- Aquí se agregarán los datos dinámicamente -->
+        </section>
+
+        <section class="resultados" id="resultados">
+            <p></p>
+        </section>
+    </section> 
+</section>
+
+<script src="main.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
