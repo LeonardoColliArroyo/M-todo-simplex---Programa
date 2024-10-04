@@ -98,4 +98,5 @@ No se requieren bibliotecas externas, ya que el proyecto utiliza solo HTML, CSS 
 #####Christian Dominique Hernandez Pacheco 
 #####Jennifer Mariana Alonzo Ake 
 #####Leonardo Angel de Jesus Colli Arroyo
+
 ### FIN
